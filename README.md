@@ -5,8 +5,25 @@
 ## want to try 
   - Here is the android app : [MemeBoss.apk](https://drive.google.com/file/d/1FdOSKRyEbV8j7nrmcrh-PHluwwTyrUcX/view?usp=sharing)
 
-# Some Image and Gifs of App
-![Welcome Screen](https://drive.google.com/file/d/1romAy0CelSZ7_cvuz31GHaYvPMwkCRNt/view?usp=sharing)
+## Some Image and Gifs of App
+
+<img src="https://github.com/nayanraj210401/MemeBoss/blob/master/memeboss_swipe.gif" width="250" height="480"/>
+
+- Welcome Screen
+ <p align = "center">
+ <img src="https://github.com/nayanraj210401/MemeBoss/blob/master/MemeBoss/welcomeScreen1.png" alt="Welcome Screen" width="240" height = "480"/>
+ <img src="https://github.com/nayanraj210401/MemeBoss/blob/master/MemeBoss/welcomeScreenLast.png" alt="Welcome Screen Last" width="240" height = "480"/>
+ </p>
+ 
+- SplashScreen
+ <img src="https://github.com/nayanraj210401/MemeBoss/blob/master/MemeBoss/SplashScreen.png" alt="Splash Screen" width="240" height = "480"/>
+ 
+- Themes
+<p>
+  <img src="https://github.com/nayanraj210401/MemeBoss/blob/master/MemeBoss/ThemeSelector.png" alt="Selector Screen"  width="240" height = "480"/>
+   <img src="https://github.com/nayanraj210401/MemeBoss/blob/master/MemeBoss/mintyGreenTheme.png" alt="MintyGreen Screen" width="240" height = "480"/>
+</p>
+
 
 # Features
 > - Uses RestAPI to generate Random Meme. 
