@@ -4,7 +4,7 @@
 - Made with :heart: and :fire: 
 
 ## want to try 
-  - Here is the android app : [MemeBoss.apk](https://github.com/nayanraj210401/MemeBoss/blob/master/memeBoss_v1.02_versionCode2.apk)
+  - Here is the android app : [MemeBoss.apk](https://github.com/nayanraj210401/MemeBoss/raw/master/memeBoss_v1.02_versionCode2.apk)
   - Google Drive : [MemeBoss.apk](https://drive.google.com/file/d/1FdOSKRyEbV8j7nrmcrh-PHluwwTyrUcX/view?usp=sharing)
   - try and please give a :star: if you like the Repo.
 
