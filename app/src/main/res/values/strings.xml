@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MemeBoss</string>
+    <string name="title_home">Memes</string>
+    <string name="title_notifications">Login</string>
+</resources>
