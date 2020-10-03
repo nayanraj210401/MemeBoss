@@ -51,7 +51,7 @@
 > The Answer was it Only took me   **16hrs : 54mins and 43 sec** I am really sorry if you didn't understand my code. feel free to ask .
 
 - Here is the whole Timeline.
-
+<img src="https://github.com/nayanraj210401/MemeBoss/blob/master/MemeBoss/timeline.jpeg" alt="Selector Screen"  width="1028" height = "500"/>
 
 
 # library used
