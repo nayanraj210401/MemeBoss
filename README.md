@@ -1,16 +1,19 @@
 # MemeBoss
 - This is MemeBoss Android app written in java.
 - MemeBoss is an App which Generate Random meme.
+- Made with :heart: and :fire: 
 
 ## want to try 
   - Here is the android app : [MemeBoss.apk](https://drive.google.com/file/d/1FdOSKRyEbV8j7nrmcrh-PHluwwTyrUcX/view?usp=sharing)
+  - Google Drive : [MemeBoss.apk](https://drive.google.com/file/d/1FdOSKRyEbV8j7nrmcrh-PHluwwTyrUcX/view?usp=sharing)
+  - try and please give a :star: if you like the Repo.
 
 ## Some Image and Gifs of App
 
 <img src="https://github.com/nayanraj210401/MemeBoss/blob/master/memeboss_swipe.gif" width="250" height="480"/>
 
 - Welcome Screen
- <p align = "center">
+ <p>
  <img src="https://github.com/nayanraj210401/MemeBoss/blob/master/MemeBoss/welcomeScreen1.png" alt="Welcome Screen" width="240" height = "480"/>
  <img src="https://github.com/nayanraj210401/MemeBoss/blob/master/MemeBoss/welcomeScreenLast.png" alt="Welcome Screen Last" width="240" height = "480"/>
  </p>
@@ -22,6 +25,7 @@
 <p>
   <img src="https://github.com/nayanraj210401/MemeBoss/blob/master/MemeBoss/ThemeSelector.png" alt="Selector Screen"  width="240" height = "480"/>
    <img src="https://github.com/nayanraj210401/MemeBoss/blob/master/MemeBoss/mintyGreenTheme.png" alt="MintyGreen Screen" width="240" height = "480"/>
+  <img src="https://github.com/nayanraj210401/MemeBoss/blob/master/MemeBoss/SunnyYellowTheme.png" alt="MintyGreen Screen" width="240" height = "480"/>
 </p>
 
 
@@ -39,7 +43,6 @@
  
 ### Issue found till now 
 - Need to fix the Cache Issue
-- Slow API.
 
 
 
@@ -47,3 +50,10 @@
   - I have done this project to ***test my android skill*** (The challenge was how much time will it take me to make a beautiful android app with some basic features)
 > The Answer was it Only took me   **16hrs : 54mins and 43 sec** I am really sorry if you didn't understand my code. feel free to ask .
 
+- Here is the whole Timeline.
+
+
+
+# library used
+- The License in the App Includes Most of the Librarys.
+- Thanks For [MEMEAPI](https://github.com/D3vd/Meme_Api) by @D3vd to make an Awesome Api.
