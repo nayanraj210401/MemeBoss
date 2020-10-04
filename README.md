@@ -47,7 +47,7 @@
 
 
 # Why did I do this project 
-  - I have done this project to ***test my android skill*** (The challenge was how much time will it take me to make a beautiful android app with some basic features)
+  - I have done this project to ***test my android skill*** (The challenge was how much time will it take me to make a beautiful android app with some basic features.I got the idea from YoutubeChannel[Anuj Bhaiya] .
 > The Answer was it Only took me   **16hrs : 54mins and 43 sec** I am really sorry if you didn't understand my code. feel free to ask .
 
 - Here is the whole Timeline.
