@@ -6,4 +6,24 @@
         android:id="@+id/shareTo"
         android:icon="@drawable/ic_baseline_share_24"
         app:showAsAction="ifRoom"/>
+    <item
+        android:title="Licenses"
+        android:id="@+id/lsc"
+        app:showAsAction="never"/>
+    <item
+        android:title="Developed By"
+        android:id="@+id/dev"
+        app:showAsAction="never"/>
+
+    <item
+        android:title="Check For Updates"
+        android:id="@+id/update"
+        app:showAsAction="never"/>
+    <item
+        android:title="Settings"
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_baseline_colorize_24"
+        app:showAsAction="ifRoom">
+
+    </item>
 </menu>

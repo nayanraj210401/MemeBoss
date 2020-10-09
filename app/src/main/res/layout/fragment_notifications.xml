@@ -6,24 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".ui.notifications.NotificationsFragment">
 
-    <com.baoyz.widget.PullRefreshLayout
-        android:id="@+id/bookmarkswipeRefreshLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:refreshType="water_drop">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_bookmarks_avalible"
+            android:visibility="invisible"
+            android:fontFamily="@font/ranchers_regular"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bookmarkrecyclerView"
+            app:layout_constraintTop_toTopOf="@+id/bookmarkrecyclerView" />
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/bookmarkrecyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="?attr/actionBarSize"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="1dp" />
-    </com.baoyz.widget.PullRefreshLayout>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

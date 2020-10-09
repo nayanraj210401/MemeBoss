@@ -3,14 +3,14 @@
 
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/ic_laugh_icon"
         android:title="@string/title_home" />
 
 
 
     <item
         android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_baseline_account_box_24"
+        android:icon="@drawable/ic_baseline_bookmark_border_24"
         android:title="@string/title_notifications" />
 
 </menu>

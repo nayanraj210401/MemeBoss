@@ -41,6 +41,7 @@ public class onInternet extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ThemePreferenceActivity.onActivityCreateSetTheme(this);
         setContentView(R.layout.activity_on_internet);
 
         checker = findViewById(R.id.check);

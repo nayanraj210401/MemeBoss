@@ -1,8 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#5D1049</color>
+    <color name="colorPrimaryDark">#4E0D3A</color>
+    <color name="colorAccent">#E30425</color>
+    <color name="colorTextTitle">#000</color>
+    <color name="colorTextsubTitle">#919191</color>
+    <color name="colorMainTitle">#fff</color>
+    <color name="colorCard">@color/cardview_light_background</color>
+
+    <!-- Whisky White -->
+    <color name="whiskycolorPrimary">#C5A8A8</color>
+    <color name="whiskycolorPrimaryDark">#B59D9D</color>
+    <color name="whiskycolorAccent">#000</color>
+    <color name="whiskycolorTextTitle">#000</color>
+    <color name="whiskycolorTextsubTitle">#919191</color>
+    <color name="whiskycolorMainTitle">#050505</color>
+    <color name="whiskycolorCard">@color/cardview_light_background</color>
+
+<!--Sunny Yellow -->
+    <color name="sunnycolorPrimary">#FFDE03</color>
+    <color name="sunnycolorPrimaryDark">#FFD600</color>
+    <color name="sunnycolorAccent">#3D6FEF</color>
+    <color name="sunnycolorTextTitle">#000</color>
+    <color name="sunnycolorTextsubTitle">#919191</color>
+    <color name="sunnycolorMainTitle">#0B0A0A</color>
+    <color name="sunnycolorCard">@color/cardview_light_background</color>
+
+<!-- minty green -->
+    <color name="mintycolorPrimary">#64DD17</color>
+    <color name="mintycolorPrimaryDark">#57BF02</color>
+    <color name="mintycolorAccent">#CD00EA</color>
+    <color name="mintycolorTextTitle">#000</color>
+    <color name="mintycolorTextsubTitle">#919191</color>
+    <color name="mintycolorMainTitle">#0B0A0A</color>
+    <color name="mintycolorCard">@color/cardview_light_background</color>
+
+<!--pretty Blue -->
+    <color name="prettycolorPrimary">#6200EE</color>
+    <color name="prettycolorPrimaryDark">#3700B3</color>
+    <color name="prettycolorAccent">#03DAC5</color>
+    <color name="prettycolorTextTitle">#000</color>
+    <color name="prettycolorTextsubTitle">#919191</color>
+    <color name="prettycolorMainTitle">#FFFFFF</color>
+    <color name="prettycolorCard">@color/cardview_light_background</color>
+
 
     <color name="first_slide_background">#E91E63</color>
     <color name="first_slide_buttons">#880E4F</color>

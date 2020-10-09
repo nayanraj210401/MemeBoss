@@ -1,5 +1,35 @@
 <resources>
     <string name="app_name">MemeBoss</string>
     <string name="title_home">Memes</string>
-    <string name="title_notifications">Login</string>
+    <string name="title_notifications">Bookmarks</string>
+    <string name="memeboss_underdevelopment">MemeBoss UnderDevelopment</string>
+    <string name="checkinternet">CheckInternet</string>
+    <string name="meme_boss">Meme Boss</string>
+    <string name="made_with">Made with ♥ and 🔥</string>
+    <string name="no_bookmarks_avalible">No Bookmarks Avalible</string>
+    <string name="title">title</string>
+    <!-- preferences -->
+    <string name="pref_dark_theme">pref_dark_theme</string> <!-- deprecated -->
+    <string name="pref_theme">pref_theme</string>
+    <string name="pref_theme_title">Theme</string>
+
+    <string name="pref_theme_value_red">red</string>
+    <string name="pref_theme_value_blue">blue</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="change_theme">Change Theme</string>
+    <string name="custom_license_title">https://github.com/R3l3ntl3ss/Meme_Api</string>
+
+    <!-- Theme -->
+    <string-array name="pref_theme_options">
+        <item>Default Red</item>
+        <item>Pretty Blue</item>
+        <item>Minty Green</item>
+        <item>Choco White</item>
+        <item>Sunny yellow</item>
+    </string-array>
+    <string-array name="pref_theme_values">
+        <item>@string/pref_theme_value_red</item>
+        <item>@string/pref_theme_value_blue</item>
+    </string-array>
+
 </resources>

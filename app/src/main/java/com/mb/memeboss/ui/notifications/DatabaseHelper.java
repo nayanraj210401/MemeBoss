@@ -6,6 +6,15 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import org.json.JSONObject;
 
+/*
+        Created by  github.com/nayanraj210401
+       This is the HelperClass for DBManger this is the class which actually make the Mysqllite database
+ */
+
+
+
+
+
 public class DatabaseHelper extends SQLiteOpenHelper {
     // Table Name
     public static final String TABLE_NAME = "Memes";

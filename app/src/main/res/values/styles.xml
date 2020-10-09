@@ -5,6 +5,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="titleTextColor">@color/colorMainTitle</item>
     </style>
     <style name="WelcomeScreenPageIndicator.Animated">
         <item name="animation">slide</item>
@@ -13,6 +14,39 @@
     <style name="WelcomeScreenPageIndicator.Light.Animated">
         <item name="animation">slide</item>
     </style>
+
+    <style name="AppTheme.White" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/whiskycolorPrimary</item>
+        <item name="colorPrimaryDark">@color/whiskycolorPrimaryDark</item>
+        <item name="colorAccent">@color/whiskycolorAccent</item>
+        <item name="titleTextColor">@color/whiskycolorMainTitle</item>
+    </style>
+
+    <style name="AppTheme.Yellow" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/sunnycolorPrimary</item>
+        <item name="colorPrimaryDark">@color/sunnycolorPrimaryDark</item>
+        <item name="colorAccent">@color/sunnycolorAccent</item>
+        <item name="titleTextColor">@color/sunnycolorMainTitle</item>
+    </style>
+
+    <style name="AppTheme.Green" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/mintycolorPrimary</item>
+        <item name="colorPrimaryDark">@color/mintycolorPrimaryDark</item>
+        <item name="colorAccent">@color/mintycolorAccent</item>
+        <item name="titleTextColor">@color/mintycolorMainTitle</item>
+    </style>
+
+    <style name="AppTheme.Blue" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/prettycolorPrimary</item>
+        <item name="colorPrimaryDark">@color/prettycolorPrimaryDark</item>
+        <item name="colorAccent">@color/prettycolorAccent</item>
+        <item name="titleTextColor">@color/prettycolorMainTitle</item>
+    </style>
+
+
+
+
+
 
 
 

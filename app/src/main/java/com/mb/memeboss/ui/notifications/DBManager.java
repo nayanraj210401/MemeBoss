@@ -5,6 +5,14 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
+
+
+/*
+        Created by  github.com/nayanraj210401
+        This is the DatabaseManagerClass which is used in NotificationFrament to interact with the database.
+ */
+
 
 public class DBManager {
     private DatabaseHelper dbHelper;
@@ -26,6 +34,7 @@ public class DBManager {
     }
     public void insert(String jsonObject) {
         ContentValues contentValue = new ContentValues();
+//        Log.d("DB HELPER"," Data Added "+jsonObject);
         contentValue.put(DatabaseHelper.MEME_OBJ, jsonObject);
         database.insert(DatabaseHelper.TABLE_NAME, null, contentValue);
     }
@@ -35,10 +44,15 @@ public class DBManager {
         if (cursor != null) {
             cursor.moveToFirst();
         }
+        Log.d("DB HELPER"," DataStatus: "+cursor);
         return cursor;
     }
 
-    public int update(long _id, String name, String desc) {
+    public boolean isOpen(){
+        return database.isOpen();
+    }
+
+    public int update(long _id, String name) {
         ContentValues contentValues = new ContentValues();
         contentValues.put(DatabaseHelper.MEME_OBJ, name);
 //        contentValues.put(DatabaseHelper.DESC, desc);
@@ -46,6 +60,7 @@ public class DBManager {
         return i;
     }
     public void delete(long _id) {
+        Log.d("DELETE","VALUE"+_id);
         database.delete(DatabaseHelper.TABLE_NAME, DatabaseHelper._ID + "=" + _id, null);
     }
 }

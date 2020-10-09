@@ -16,21 +16,24 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.DataSource;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 import com.mb.memeboss.R;
+import com.zolad.zoominimageview.ZoomInImageView;
 
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
 
     private final int VIEW_TYPE_ITEM = 0;
     private final int VIEW_TYPE_LOADING = 1;
     public ArrayList<JSONObject> memes ;
+    private onClickListner onclicklistner;
     public int loading = 1;
     public RecyclerViewAdapter(ArrayList<JSONObject> memes){
         this.memes = memes;
@@ -45,7 +48,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_card, parent, false);
 //            Log.d("Adapter Array",memes.size()+" ");
 //            loading = false;
-            return new ItemViewHolder(view);
+            return new ItemViewHolder(view, this);
         } else {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_loading, parent, false);
             Log.d("Adapter Array",memes.size()+" ");
@@ -82,21 +85,45 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     }
 
 
-    private class ItemViewHolder extends RecyclerView.ViewHolder {
+    private  class ItemViewHolder extends RecyclerView.ViewHolder  implements View.OnClickListener, View.OnLongClickListener{
 
         TextView title , author;
-        ImageView mainImage;
+        ZoomInImageView mainImage;
         ProgressBar imageProgressBar;
-        public ItemViewHolder(@NonNull View itemView) {
+        RecyclerViewAdapter recyclerViewAdapter;
+        public ItemViewHolder(@NonNull View itemView,RecyclerViewAdapter recyclerViewAdapter) {
             super(itemView);
-            Log.d("Adapter Array",memes.size()+" ");
             title = itemView.findViewById(R.id.titleTV);
             author = itemView.findViewById(R.id.authorTV);
             mainImage = itemView.findViewById(R.id.mainIV);
             imageProgressBar = itemView.findViewById(R.id.imagePB);
+            this.recyclerViewAdapter = recyclerViewAdapter;
+            itemView.setOnClickListener(this);
+        }
 
+
+
+
+        @Override
+        public void onClick(View view) {
+            onclicklistner.onItemClick(getAdapterPosition(), view);
+        }
+
+        @Override
+        public boolean onLongClick(View view) {
+            onclicklistner.onItemLongClick(getAdapterPosition(), view);
+            return true;
         }
     }
+    public interface onClickListner {
+        void onItemClick(int position, View v);
+        void onItemLongClick(int position, View v);
+    }
+
+    public void setOnItemClickListener(onClickListner onclicklistner) {
+        this.onclicklistner = onclicklistner;
+    }
+
 
     private static class LoadingViewHolder extends RecyclerView.ViewHolder {
 
@@ -109,7 +136,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     }
 
     private void showLoadingView(LoadingViewHolder viewHolder, int position) {
-        //ProgressBar would be displayed /// DONT DELETE
         viewHolder.progressBar.setVisibility(View.VISIBLE);
     }
     private void dontShowLoadingView(LoadingViewHolder viewHolder,int position){
@@ -119,10 +145,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         JSONObject obj = memes.get(position);
         try {
             viewHolder.title.setText(obj.getString("title"));
-            viewHolder.author.setText(obj.getString("subreddit"));
+            viewHolder.author.setText(obj.getString("author"));
             String url = obj.getString("url");
             Glide.with(viewHolder.mainImage.getContext())
                     .load(url)
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
                     .listener(new RequestListener<Drawable>() {
                         @Override
                         public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
@@ -135,10 +162,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
                             viewHolder.imageProgressBar.setVisibility(View.GONE);
                             return false;
                         }
-                    })
-                    .into(viewHolder.mainImage);
+                    }).into(viewHolder.mainImage);
         }catch (Exception e){
-            Log.d("ERROR",e+" ");
+//            Log.d("ERROR",e+" ");
 //            Toast.makeText(this,"error"+e,Toast.LENGTH_LONG).show();
         }
     }
