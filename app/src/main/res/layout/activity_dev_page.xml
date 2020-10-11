@@ -17,19 +17,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.845" />
+        app:layout_constraintVertical_bias="0.608" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="96dp"
         android:fontFamily="@font/ranchers_regular"
-        android:textSize="30dp"
         android:text="NayanRaj Adhikary"
         android:textColor="#000"
+        android:textSize="30dp"
 
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,52 +39,54 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:rowCount="2"
         android:columnCount="2"
+        android:rowCount="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7">
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.704">
 
 
         <ImageButton
-            android:background="#fff"
-            android:layout_margin="16dp"
             android:id="@+id/imageButton8"
             android:layout_width="84dp"
             android:layout_height="84dp"
             android:layout_row="1"
             android:layout_column="1"
+            android:layout_margin="16dp"
+            android:background="#fff"
             app:srcCompat="@drawable/ic_instagram_64dp" />
 
         <ImageButton
-            android:background="#fff"
-            android:layout_margin="16dp"
             android:id="@+id/imageButton6"
             android:layout_width="84dp"
             android:layout_height="84dp"
             android:layout_row="0"
             android:layout_column="0"
+            android:layout_margin="16dp"
+            android:background="#fff"
             app:srcCompat="@drawable/ic_github_64dp" />
 
         <ImageButton
-            android:background="#fff"
-            android:layout_margin="16dp"
             android:id="@+id/imageButton7"
             android:layout_width="84dp"
             android:layout_height="84dp"
             android:layout_row="0"
             android:layout_column="1"
+            android:layout_margin="16dp"
+            android:background="#fff"
             app:srcCompat="@drawable/ic_baseline_email_24" />
 
         <ImageButton
-            android:background="#fff"
-            android:layout_margin="16dp"
             android:id="@+id/imageButton9"
             android:layout_width="84dp"
             android:layout_height="84dp"
             android:layout_row="1"
             android:layout_column="0"
+            android:layout_margin="16dp"
+            android:background="#fff"
             app:srcCompat="@drawable/ic_linkedin_64dp" />
 
     </GridLayout>
@@ -98,4 +101,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
         app:layout_constraintVertical_bias="0.82" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"
+        android:text="I have made MemeBoss app to just a challenge and Completed the app from scratch to app working app. apart from that i have worked for more 3 days to remove bugs and other. I want you guys to message me if you like the app that will make my day a special. And Do share among your friends."
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.235" />
 </androidx.constraintlayout.widget.ConstraintLayout>
