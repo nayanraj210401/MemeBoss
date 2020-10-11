@@ -4,8 +4,8 @@
 - Made with :heart: and :fire: 
 
 ## want to try 
-  - Here is the android app : [MemeBoss.apk](https://github.com/nayanraj210401/MemeBoss/raw/master/app/release/memeBoss_v1.03_finalBuild.apk)
-  - Google Drive : [MemeBoss.apk](https://drive.google.com/file/d/1LtEWsu6aUlG4S3sz1szzf6aeEDUwd0yh/view?usp=sharing)
+  - Here is the android app : [MemeBoss.apk](https://github.com/nayanraj210401/MemeBoss/raw/master/app/release/memeBoss_v1.04_SignedApk.apk) {version 1.04 :fire:}
+  - Google Drive : [MemeBoss.apk](https://drive.google.com/file/d/1hpHUrN29qoewpmpSO2rbK5L7eA8WM_zS/view?usp=sharing)
   - try and please give a :star: if you like the Repo.
 
 ## Some Image and Gifs of App
