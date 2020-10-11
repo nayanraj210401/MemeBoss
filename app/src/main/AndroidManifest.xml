@@ -11,8 +11,11 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/icon_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        >
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".devPage"
             android:screenOrientation="portrait" />
@@ -43,7 +46,7 @@
          action required to display activity in share list
                 -->
                 <category android:name="android.intent.category.DEFAULT" />
-                <!--           Make activity default to launch -->
+                <!-- Make activity default to launch -->
                 <!-- Mime type i.e. what can be shared with this activity only image and text -->
                 <data android:mimeType="image/*" />
                 <data android:mimeType="text/*" />
@@ -57,10 +60,6 @@
         <meta-data
             android:name="firebase_performance_logcat_enabled"
             android:value="true" />
-
-        
     </application>
-
-
 
 </manifest>

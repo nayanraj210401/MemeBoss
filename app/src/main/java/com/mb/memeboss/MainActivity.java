@@ -257,6 +257,10 @@ public class MainActivity extends AppCompatActivity {
                 });
                 builder.show();
                 break;
+            case R.id.thridPartyLicenses:
+                // launch thrid
+                startActivity(new Intent(this,ScrollingActivity.class));
+                break;
 
             default:
                 return super.onOptionsItemSelected(item);

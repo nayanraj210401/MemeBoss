@@ -6,7 +6,6 @@ import com.stephentuso.welcome.WelcomeConfiguration;
 
 public class WelcomeActivitys extends WelcomeActivity {
 
-
     @Override
     protected WelcomeConfiguration configuration() {
         return new WelcomeConfiguration.Builder(this)
@@ -38,7 +37,6 @@ public class WelcomeActivitys extends WelcomeActivity {
                         .background(R.color.third_slide_background)
                 )
 
-
                 .page(new BasicPage(R.drawable.ic_baseline_share_24,
                         "Share it",
                         "Share the direct meme .")
@@ -50,7 +48,6 @@ public class WelcomeActivitys extends WelcomeActivity {
                         "Made with ♥")
                         .background(R.color.custom_slide_background)
                 )
-
 
                 .swipeToDismiss(true)
                 .exitAnimation(android.R.anim.fade_out)

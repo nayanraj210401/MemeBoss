@@ -7,6 +7,7 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="titleTextColor">@color/colorMainTitle</item>
     </style>
+
     <style name="WelcomeScreenPageIndicator.Animated">
         <item name="animation">slide</item>
     </style>
@@ -20,6 +21,7 @@
         <item name="colorPrimaryDark">@color/whiskycolorPrimaryDark</item>
         <item name="colorAccent">@color/whiskycolorAccent</item>
         <item name="titleTextColor">@color/whiskycolorMainTitle</item>
+
     </style>
 
     <style name="AppTheme.Yellow" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -27,6 +29,7 @@
         <item name="colorPrimaryDark">@color/sunnycolorPrimaryDark</item>
         <item name="colorAccent">@color/sunnycolorAccent</item>
         <item name="titleTextColor">@color/sunnycolorMainTitle</item>
+
     </style>
 
     <style name="AppTheme.Green" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -42,12 +45,6 @@
         <item name="colorAccent">@color/prettycolorAccent</item>
         <item name="titleTextColor">@color/prettycolorMainTitle</item>
     </style>
-
-
-
-
-
-
 
 
     <!-- Styles used by most of the welcome screens -->
@@ -100,6 +97,15 @@
         <item name="windowActionBar">true</item>
         <item name="windowNoTitle">false</item>
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
 </resources>

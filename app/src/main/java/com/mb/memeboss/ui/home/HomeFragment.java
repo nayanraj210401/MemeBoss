@@ -1,4 +1,5 @@
 package com.mb.memeboss.ui.home;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -30,6 +31,7 @@ import com.mb.memeboss.ui.notifications.DBManager;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -46,6 +48,7 @@ public class HomeFragment extends Fragment {
     ArrayList<JSONObject> memeObject = new ArrayList<>();
     boolean isLoading = false;
     ProgressBar progressBar,scrollPB;
+    int refresingCounter = 7;
     PullRefreshLayout layout;
     private DBManager dbManager;
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -58,8 +61,14 @@ public class HomeFragment extends Fragment {
         layout.setOnRefreshListener(new PullRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                memeObject.clear();
-            populateData(root);
+                refresingCounter--;
+                if(refresingCounter > 0) {
+//                    deleteCache(root.getContext());
+                    memeObject.clear();
+                    populateData(root);
+                }else{
+                    Toast.makeText(root.getContext(),"Please wait memes Refreshing ",Toast.LENGTH_SHORT).show();
+                }
             layout.setRefreshing(false);
             }
 
@@ -74,6 +83,35 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
+    public static void deleteCache(Context context) {
+        try {
+            File dir = context.getCacheDir();
+            deleteDir(dir);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static boolean deleteDir(File dir) {
+        if (dir != null && dir.isDirectory()) {
+            String[] children = dir.list();
+            for (int i = 0; i < children.length; i++) {
+                boolean success = deleteDir(new File(dir, children[i]));
+                if (!success) {
+                    return false;
+                }
+            }
+            Log.d("DeleteCache","Cache Delete");
+            return dir.delete();
+        } else if (dir != null && dir.isFile()) {
+            return dir.delete();
+        } else {
+            return false;
+        }
+//        Toast.makeText(,"deleting Cache",Toast.LENGTH_LONG).show();
+
+    }
+
     private void populateData(final View root) {
         String apiurl = "https://meme-api.herokuapp.com/gimme/30";
         RequestQueue queue = Volley.newRequestQueue(Objects.requireNonNull(root.getContext()));
@@ -81,7 +119,6 @@ public class HomeFragment extends Fragment {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-
 //                        Log.d("Response","Value"+response);
                         try {
                             JSONObject respon = new JSONObject(response);
@@ -186,6 +223,7 @@ public class HomeFragment extends Fragment {
                 queue.add(stringRequest);
                 recyclerViewAdapter.notifyDataSetChanged();
                 isLoading = false;
+                refresingCounter = 7;
             }
         }, 2000);
 
