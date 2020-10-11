@@ -207,12 +207,16 @@ public class HomeFragment extends Fragment {
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
                 int position = viewHolder.getAdapterPosition();
                 JSONObject obj = memeObject.get(position);
-                dbManager.insert(obj.toString());
+                if(viewHolder instanceof RecyclerViewAdapter.ItemViewHolder) {
+                    dbManager.insert(obj.toString());
 //                memeObject.set(position,null);
-                memeObject.remove(position);
-                recyclerViewAdapter.notifyDataSetChanged();
-                Snackbar snackbar = Snackbar.make(Objects.requireNonNull(getView()),"Added to Bookmarks",Snackbar.LENGTH_SHORT);
-                snackbar.show();
+                    memeObject.remove(position);
+                    recyclerViewAdapter.notifyDataSetChanged();
+                    Snackbar snackbar = Snackbar.make(Objects.requireNonNull(getView()), "Added to Bookmarks", Snackbar.LENGTH_SHORT);
+                    snackbar.show();
+                }else{
+                    Toast.makeText(getContext(),"You Cannot Insert This Card !!",Toast.LENGTH_LONG).show();
+                }
             }
 
             @Override
