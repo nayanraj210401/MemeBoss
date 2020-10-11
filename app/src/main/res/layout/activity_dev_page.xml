@@ -109,7 +109,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:padding="10dp"
-        android:text="I have made MemeBoss app to just a challenge and Completed the app from scratch to app working app. apart from that i have worked for more 3 days to remove bugs and other. I want you guys to message me if you like the app that will make my day a special. And Do share among your friends."
+        android:text="I have made MemeBoss app just as a challenge and Completed the app from scratch to working app. apart from that i have worked for more 3 days to remove bugs and other problems in the app. I want you guys to message me if you like the app, that will make my day an special day. And Do share among your friends."
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.524"
